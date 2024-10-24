@@ -1,38 +1,168 @@
-<h1 align="center">Hi 👋, I'm Rawen AYEDI</h1>
-<h3 align="center">I'm a second-year computer systems engineering student specializing in IoT. I bring technical skills, teamwork prowess, and a hunger for growth to your company. My skills span full stack development, Internet of Things, Data Analysis and ML</h3>
+# 👗 E-Commerce Clothing Classifier Model 👚
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=rawendeveloper&label=Profile%20views&color=0e75b6&style=flat" alt="rawendeveloper" /> </p>
+## 🌟 Overview
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=rawendeveloper" alt="rawendeveloper" /></a> </p>
+This project focuses on an **E-Commerce Clothing Classifier Model** developed using **PyTorch**. The model is designed to categorize clothing items into distinct classes based on product images, such as **T-shirts**, **Dresses**, **Pants**, and **Shoes**. The classifier can help online retail platforms automatically label products, improving user search experience and inventory management.
 
-- 🌱 I’m currently learning **Deep Learning & ML & AI using Python and Pytorch**
+The project leverages **Convolutional Neural Networks (CNNs)** to extract visual features and predict the correct category, providing an essential tool for modern e-commerce platforms to automate classification processes.
 
-- 👨‍💻 All of my projects are available at [https://rawen-ayedi-portfolio.vercel.app/project](https://rawen-ayedi-portfolio.vercel.app/project)
+---
 
-- 📝 I regularly write articles on [https://medium.com/@rawen.ayedi.dev](https://medium.com/@rawen.ayedi.dev)
+## 📋 Table of Contents
 
-- 📫 How to reach me **rawen.ayedi.dev@gmail.com**
+- [Features](https://www.notion.so/124b6f04a80680ff976bd56443416577?pvs=21)
+- [Getting Started](https://www.notion.so/124b6f04a80680ff976bd56443416577?pvs=21)
+    - [Prerequisites](https://www.notion.so/124b6f04a80680ff976bd56443416577?pvs=21)
+    - [Installation](https://www.notion.so/124b6f04a80680ff976bd56443416577?pvs=21)
+    - [Usage](https://www.notion.so/124b6f04a80680ff976bd56443416577?pvs=21)
+- [Model Architecture](https://www.notion.so/124b6f04a80680ff976bd56443416577?pvs=21)
+- [Directory Structure](https://www.notion.so/124b6f04a80680ff976bd56443416577?pvs=21)
+- [Future Enhancements](https://www.notion.so/124b6f04a80680ff976bd56443416577?pvs=21)
+- [Contributing](https://www.notion.so/124b6f04a80680ff976bd56443416577?pvs=21)
+- [License](https://www.notion.so/124b6f04a80680ff976bd56443416577?pvs=21)
 
-- 📄 Know about my experiences [https://rawen-ayedi-portfolio.vercel.app/](https://rawen-ayedi-portfolio.vercel.app/)
+---
 
-### Blogs posts
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
+## ✨ Features
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/@rawen-ayedi" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="@rawen-ayedi" height="30" width="40" /></a>
-<a href="https://kaggle.com/@rawenayedi" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="@rawenayedi" height="30" width="40" /></a>
-<a href="https://www.behance.net/@monomimina" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg" alt="@monomimina" height="30" width="40" /></a>
-<a href="https://medium.com/@rawen.ayedi.dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@rawen.ayedi.dev" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/@rawen_ayedi_dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="@rawen_ayedi_dev" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/@rawendeveloper" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="@rawendeveloper" height="30" width="40" /></a>
-<a href="https://www.hackerearth.com/@rawen_ayedi_dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@rawen_ayedi_dev" height="30" width="40" /></a>
-</p>
+- **🛍️ Image Upload**: Input clothing product images for automatic classification.
+- **🧥 Clothing Category Classification**: The model predicts the correct category, such as T-shirts, Dresses, Pants, and Shoes.
+- **📊 Performance Metrics**: Evaluate the model using accuracy, precision, recall, and F1-score.
+- **🖥️ PyTorch Implementation**: Built using the PyTorch framework for flexibility and performance.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+---
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=rawendeveloper&show_icons=true&locale=en&layout=compact" alt="rawendeveloper" /></p>
+## 🚀 Getting Started
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rawendeveloper&" alt="rawendeveloper" /></p>
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Python 3.8+
+- PyTorch
+- Torchvision
+- Numpy
+- Pandas
+- Matplotlib
+
+### Installation
+
+Follow these steps to set up the project:
+
+1. Clone the repository:
+    
+    ```bash
+    bash
+    Copier le code
+    git clone https://github.com/yourusername/ecommerce-clothing-classifier.git
+    
+    ```
+    
+2. Navigate to the project directory:
+    
+    ```bash
+    bash
+    Copier le code
+    cd ecommerce-clothing-classifier
+    
+    ```
+    
+3. Install the required dependencies:
+    
+    ```bash
+    bash
+    Copier le code
+    pip install -r requirements.txt
+    
+    ```
+    
+
+### Usage
+
+1. Train the model on your dataset:
+    
+    ```bash
+    bash
+    Copier le code
+    python train.py --dataset /path/to/dataset
+    
+    ```
+    
+2. To make predictions on a new clothing image:
+    
+    ```bash
+    bash
+    Copier le code
+    python predict.py --image /path/to/image.jpg
+    
+    ```
+    
+3. The predicted clothing category and the confidence score will be displayed.
+
+---
+
+## 🧠 Model Architecture
+
+The clothing classifier is built using a **Convolutional Neural Network (CNN)**, which includes:
+
+- **Conv2D & MaxPooling Layers**: To extract spatial features and reduce the dimensionality of the image.
+- **Dropout Layer**: Applied to avoid overfitting during training.
+- **Fully Connected (Dense) Layers**: For final classification into clothing categories.
+- **Softmax Output Layer**: To output the probabilities for each clothing category.
+
+The model is trained on a custom dataset with images of different clothing categories labeled accordingly.
+
+---
+
+## 📁 Directory Structure
+
+```bash
+bash
+Copier le code
+ecommerce-clothing-classifier/
+│
+├── dataset/                   # Directory containing images and labels
+├── train.py                   # Script to train the model
+├── predict.py                 # Script to make predictions
+├── model.py                   # CNN model architecture
+├── requirements.txt           # Dependencies for the project
+└── README.md                  # This readme file
+
+```
+
+---
+
+## 🔍 Example
+
+1. Run the `train.py` script to train the model on the clothing dataset.
+2. Once trained, use `predict.py` to classify an uploaded clothing image.
+3. The model will output the predicted class (e.g., T-shirt, Dress, etc.) along with the probability score.
+
+---
+
+## 🌱 Future Enhancements
+
+- 🛒 **Add More Categories**: Expand the model to classify a broader range of clothing types and accessories.
+- ⚡ **Model Optimization**: Improve the model's accuracy and inference speed.
+- ☁️ **Cloud Deployment**: Integrate the model with cloud services for use on large-scale e-commerce platforms.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to improve this project, please fork the repository and submit a pull request with your changes. For major changes, open an issue first to discuss what you would like to change.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Special thanks to **PyTorch** for providing the tools to build and train the deep learning model.
+- **Torchvision** for offering pre-trained models and easy-to-use data transformations.
+
+##
